@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.text.*;
 
 public class SalespersonSalary {
-	final static double COMMISSION_RATE = 0.15;
-	final static int SENTINEL = -1;
+	static final double COMMISSION_RATE = 0.15;
+	static final int SENTINEL = -1;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

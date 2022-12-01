@@ -1,13 +1,13 @@
 import java.util.Scanner;
 import java.text.*;
 public class IncomeTaxCalculator {
-	final static double TAX_RATE_ABOVE_20K = 0.1;
-	final static double TAX_RATE_ABOVE_40K = 0.2;
-	final static double TAX_RATE_ABOVE_60K = 0.3;
+	static final double TAX_RATE_ABOVE_20K = 0.1;
+	static final double TAX_RATE_ABOVE_40K = 0.2;
+	static final double TAX_RATE_ABOVE_60K = 0.3;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		DecimalFormat frm = new DecimalFormat("####.00");
+		DecimalFormat frm = new DecimalFormat("###0.00");
 		Scanner scan = new Scanner(System.in);
 		double taxableIncome;
 		double taxPayable = 0;

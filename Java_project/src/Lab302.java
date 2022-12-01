@@ -21,7 +21,7 @@ public class Lab302 {
 			JOptionPane.showMessageDialog(null,"BMI-"+frm.format(bmi)+
 					                      "\nYou're Overweight","BMI",JOptionPane.WARNING_MESSAGE);
 		}
-		else if(bmi>=30.0) {
+		else {
 			JOptionPane.showMessageDialog(null,"BMI-"+frm.format(bmi)+
 					                      "\nYou're Obesity","BMI",JOptionPane.WARNING_MESSAGE);
 		}
