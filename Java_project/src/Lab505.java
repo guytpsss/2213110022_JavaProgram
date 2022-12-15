@@ -21,22 +21,25 @@ public class Lab505 {
 		displayData(ITstudent,ITSubject,studentID);
 	}//end input
 	public static boolean isLength(String sID,String subID) {
-		if(sID.equals(7)) return true;
-		else if(subID.equals(7)) return true;
+		if(sID.length()==7) return true;
+		else if(subID.length()==7) return true;
 		else return false;
 	}//end length
 	public static boolean isITStudent(String studentID){
-		if(studentID.charAt(2)=='1'&&studentID.substring(3,5).equals("311")) return true;
+		if(studentID.charAt(2)=='1'&&studentID.substring(3,6).equals("311")) return true;
 		else return false;
 	}
 	public static boolean isITSubject(String subjectID) {
-			if(subjectID.substring(0,1).equals("21")&&subjectID.charAt(4)=='1') return true;
+			if(subjectID.substring(0,2).equals("21")&&subjectID.charAt(4)=='1') return true;
 			else return false;
 	}
 	public static void displayData(boolean ITstudent,boolean ITSubject,String studentID) {
 		if(ITstudent==true&&ITSubject==true) {
 			System.out.print("Student id: "+studentID+((ITstudent)?" 1st year student in IT and\nEnrol in courses for Year 1"
 					:"is not 1st student in IT and\nEnrol in courses for Year 1"));
+			if(ITstudent==true&&ITSubject==false) {
+				System.out.print("Student id: "+studentID+"1st year student in IT \nnot enroll in courses for Year 1");
+			}
 		}
 	}
 }
