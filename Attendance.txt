@@ -2,4 +2,4 @@ Date			: 08-Dec-2022
 Student ID 		: 2213110022
 Fullname(in English) 	: Phoodis Chotchuang
 AKA 			: guytpsss
-Classdetail 		: User-Define Method with String
+Classdetail 		: Array in Java
