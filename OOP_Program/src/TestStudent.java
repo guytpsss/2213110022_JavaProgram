@@ -4,7 +4,8 @@ public class TestStudent {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
-		Student[] std = new Student[3];//defind array of object
+		System.out.print("How many in classroom : ");
+		Student[] std = new Student[scan.nextInt()];//defind array of object
 		for(int i =0;i<std.length;i++) {
 			std[i] = new Student(); // declare array object,call all of method student()
 			System.out.print("Input Studet name : ");
@@ -17,8 +18,6 @@ public class TestStudent {
 			}//end while
 			System.out.println();
 		}//end for
-		System.out.println();
-		System.out.println("List OF PASS STUDENT (>=50)");
 		System.out.println("-----------------------------------");
 		/*for(int i=0;i<std.length;i++) {
 			if(std[i].isPass()) {
@@ -26,10 +25,18 @@ public class TestStudent {
 			}
 		}*/
 		for(Student STD : std) {
-			if(STD.isPass()) {
-				System.out.println(">> "+STD.getName()+" ("+STD.getScore()+")");
-			}
-		}
+			String grade = findGrade(STD.getScore());
+				System.out.println(">> "+STD.getName()+" get grade "+grade);
+		}//end loop
+	}//end main
+	public static String findGrade(int score) {
+		if(score >=80 && score <=100) return "A";
+		else if(score >=75 && score <=79) return "B+";
+		else if(score >=70 && score <=74) return "B";
+		else if(score >=65 && score <=69) return "C+";
+		else if(score >=60 && score <=64) return "C";
+		else if(score >=55 && score <=59) return "D+";
+		else if(score >=50 && score <=54) return "D";
+		else return "F";
 	}
-
 }
