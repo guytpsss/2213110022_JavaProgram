@@ -16,10 +16,10 @@ public class Product{
 	public int getUnit() {
 		return unit;
 	}
-	public void setPrice(double Price) {
-		price = Price;
+	public void setPrice(double PRICE) {
+		price = PRICE;
 	}
-	public double getPrive() {
+	public double getPrice() {
 		return price;
 	}
 	public double calculate() {
