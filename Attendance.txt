@@ -2,4 +2,4 @@ Date			: 12-02-2023
 Student ID 		: 2213110022
 Fullname(in English) 	: Phoodis Chotchuang
 AKA 			: guytpsss
-Classdetail 		: GUI
+Classdetail 		: Encapsulation
