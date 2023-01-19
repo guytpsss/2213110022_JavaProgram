@@ -20,21 +20,21 @@ public class StockProduct {
 			}
 			System.out.println();
 		}//end for loop
-		System.out.println("-------------------------------");
+		System.out.println("------------------------------------");
 		System.out.println("List of product in \'LOW\' status");
-		System.out.println("-------------------------------");
+		System.out.println("------------------------------------");
 		for(Product PD:ProductL) {
 			if(PD.getUnit()<5) System.out.print(">> "+PD.getID()+" has "+PD.getUnit()+" unit ");
 		}
-		System.out.println("-------------------------------");
+		System.out.println("------------------------------------");
 		System.out.println("List of product in \'NORMAL\' status");
-		System.out.println("-------------------------------");
+		System.out.println("------------------------------------");
 		for(Product PD:ProductL) {
 			if(PD.getUnit()>=50) System.out.print(">> "+PD.getID()+" has "+PD.getUnit()+" unit ");
 		}
-		System.out.println("-------------------------------");
+		System.out.println("-----------------------------------");
 		System.out.println("List of product in \'HIGH\' status");
-		System.out.println("-------------------------------");
+		System.out.println("------------------------------------");
 		for(Product PD:ProductL) {
 			if(PD.getUnit()>50) System.out.print(">> "+PD.getID()+" has "+PD.getUnit()+" unit ");
 		}
